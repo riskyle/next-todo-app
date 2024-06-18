@@ -27,6 +27,9 @@ export default function InteractiveList() {
 
   const handleTodoSubmit = (e) => {
     e.preventDefault();
+    if (!todo) {
+      return;
+    }
     dispatch({ type: "ADD_TODOS", payload: { id: Date.now(), desc: todo } });
     setTodo("");
   };
@@ -47,7 +50,12 @@ export default function InteractiveList() {
           value={todo}
           onChange={(e) => setTodo(e.target.value)}
         />
-        <Button type="submit" size="small" variant="outlined">
+        <Button
+          className="button"
+          type="submit"
+          size="small"
+          variant="outlined"
+        >
           Add Todo
         </Button>
       </form>

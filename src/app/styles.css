@@ -1,0 +1,23 @@
+.button {
+    margin-top: 10px;
+    display: block;
+    justify-content: left;
+    width: 12.3rem;
+}
+
+.images .div-image {
+    display: inline;
+    margin-top: 100px;
+}
+
+
+.image {
+    margin: 50px;
+    border-color: black;
+    border-radius: 30px;
+}
+
+.image:hover {
+    height: 30%;
+    width: 30%;
+}
